@@ -9,10 +9,10 @@
         <div class="panel panel-default">
           <div class="panel-heading text-center">
             <img src="
-<%= item.image_url  %>
-" alt="">
+  <%= item.image_url  %>
+  " alt="">
           </div>
-         <div class="panel-body">
+          <div class="panel-body">
            
 <% if item.persisted?  %>
 
@@ -29,21 +29,17 @@
            
 <%  end %>
            
-           <div class="buttons text-center">
+           <div class="buttons text-center ">
              
 <% if logged_in?  %>
+
              
 <%= render "ownerships/want_button", item: item  %>
 
 <%= render "ownerships/have_button", item: item  %>
 
 
-
-
 <% end  %>
-
-
-<%  end %>
              
            </div>
          </div> 
@@ -54,3 +50,5 @@
 <%  end %>
     
   </div>
+  
+  <%  end %>
